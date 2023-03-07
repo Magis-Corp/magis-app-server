@@ -18,4 +18,7 @@ class UserController {
     }
 }
 
-module.exports = UserController
+module.exports = {
+    register: UserController.register,
+    login: UserController.login,
+}
