@@ -1,7 +1,15 @@
 const { User } = require('../models')
 
-class Controller {
+class UserController {
     static async register (req, res) {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
+
+    static async login(req, res) {
         try {
             
         } catch (error) {
@@ -10,4 +18,4 @@ class Controller {
     }
 }
 
-module.exports = Controller
+module.exports = UserController
