@@ -1,7 +1,7 @@
-const Controller = require("./controllers/userController")
-
 const app = require("express")()
+const PORT = 3000
+const router = require('./routes/index.js')
 
-app.post('/auth/register', Controller.register)
+app.use(router)
 
-app.listen(3000)
+app.listen(PORT, () => console.log("App listening to PORT", PORT))
